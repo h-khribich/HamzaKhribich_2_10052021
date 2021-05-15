@@ -2,12 +2,12 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/cbf8feb3a6.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="image/svg+xml" href="images/logo/Reservia.svg"/>
         <title>Reservia</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="images/logo/Reservia.svg"/>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/cbf8feb3a6.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -16,7 +16,7 @@
                 <div id="header--logo"><img src="images/logo/Reservia.svg" alt="Logo de Réservia"></div>
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergement</a></li>
+                        <li><a href="#">Hébergements</a></li>
                         <li><a href="#">Activités</a></li>
                         <li id="bouton_inscription"><a href="#">S'inscrire</a></li>
                     </ul>
@@ -34,6 +34,24 @@
                         <input type="search" id="query" name="q" placeholder="Marseille, France" aria-label="Effectuer une recherche">
                         <button type="submit">Rechercher</button>
                     </form>
+
+                    <!-- Filtres -->
+                    <div id="filtre--container">
+                        <p id="filtre--titre">Filtres</p>
+                        <div class="filtre">
+                            <p><i id="icone_déformée" class="fas fa-money-bill-wave"></i>Économique</p>
+                        </div>
+                        <div class="filtre">
+                            <p><i class="fas fa-child fa-lg"></i></i>Familial</p>
+                        </div>
+                        <div class="filtre">
+                            <p><i class="fas fa-heart"></i></i>Romantique</p>
+                        </div>
+                        <div class="filtre">
+                            <p><i class="fas fa-dog"></i></i>Animaux autorisés</p>
+                        </div>
+                    </div>
+                    <div id="search_result"><i class="fas fa-info fa-xs"></i>Plus de 500 logements sont disponibles dans cette ville</div>
                 </section>
             </main>
         </div>

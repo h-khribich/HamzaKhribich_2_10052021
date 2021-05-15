@@ -14,11 +14,11 @@
     color: rgb(45, 45, 45);
 }
 
-#main_wrapper { margin: 0 5%; }
+#main_wrapper { margin: 0 4%; }
 
 h1 { 
-    font-size: 21px;
-    padding-bottom: 10px;
+    font-size: 1.4em;
+    padding: 10px 0px;
 }
 
 /* --- HEADER --- */
@@ -31,9 +31,8 @@ header {
 }
 
 #header--logo {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
+    display: inline-flex;
+    padding-top: 15px;
 }
 
 /* Nav */
@@ -49,7 +48,7 @@ nav li { list-style-type: none; }
 nav a {
     color: rgb(65, 65, 65);
     border-top: 2px solid transparent;
-    padding: 55px 30px 45px 30px;
+    padding: 50px 34px 40px;
     text-decoration: none;
     display: inline-block;
 }
@@ -57,6 +56,7 @@ nav a {
 nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
+    transition: 0.4s ease-in;
 }
 
 #bouton_inscription a {
@@ -75,31 +75,26 @@ nav a:hover {
 
 #searchbar {
     margin: 20px 0px;
-    height: 52px;
-    display: inline-block;
-    position: relative;
-    align-items: baseline;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 #searchbar 
 input,
 button {
     height: 100%;
-    font-size: 16px;
-    font-weight: bolder;
+    font-size: 1.1em;
+    font-weight: 600;
     border: none;
 }
 
 #searchbar input {
-    margin-left: 52px;
-    padding: 10px 45px 10px 15px;
+    width: 235px;
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 10px 15px;
     border: 1px solid #F2F2F2;
-}
-
-#searchbar input:focus {
-    margin-left: 52px;
-    padding: 10px 45px 10px 15px;
-    border: 1px solid #0065FC;
 }
 
 ::placeholder {
@@ -110,19 +105,88 @@ button {
 #searchbar button {
     color: #fff;
     background-color: #0065FC;
-    padding: 10px 17px;
+    padding: 10px 18px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    position: absolute;
+}
+
+#searchbar button:hover {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    transition: 0.3s ease-in;
 }
 
 #searchbar i {
-    padding: 18px 20px;
+    padding: 17px 20px;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    position: absolute;
 }
 
-
 /* Filtres */
+
+#filtre--container {
+    padding-top: 10px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#filtre--titre {
+    display: inline;
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 7px;
+    margin-left: 10px;
+}
+
+.filtre {
+    display: inline;
+}
+
+.filtre p, i {
+    display: inline;
+}
+
+.filtre p {
+    padding: 13px 20px 12px 0px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid #e2e2e2;
+    border-radius: 25px;
+    border-left-style: none;
+    border-left-color: #fff;
+}
+
+.filtre i {
+    padding: 16px;
+    margin-right: 13px;
+    display: inline-flex;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 47%;
+}
+
+/* Icône à la largeur différente des autres, modification du padding en conséquence pour ne pas avoir à la retrécir */
+#icone_déformée {
+    padding: 16px 14px;
+}
+
+/* Résultat de recherche */
+
+#search_result {
+    margin: 35px 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#search_result i {
+    margin-right: 10px;
+    padding: 6px 10px;
+    color: #0065FC;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+}
