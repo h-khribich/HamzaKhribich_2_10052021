@@ -17,7 +17,7 @@
 #main_wrapper { margin: 0 4%; }
 
 h1 { 
-    font-size: 1.4em;
+    font-size: 22px;
     padding: 10px 0px;
 }
 
@@ -137,16 +137,7 @@ button {
     display: inline;
     font-size: 17px;
     font-weight: 700;
-    margin-right: 7px;
-    margin-left: 10px;
-}
-
-.filtre {
-    display: inline;
-}
-
-.filtre p, i {
-    display: inline;
+    margin: 0px 5px;
 }
 
 .filtre p {
@@ -162,21 +153,19 @@ button {
 .filtre i {
     padding: 16px;
     margin-right: 13px;
-    display: inline-flex;
+    display: inline;
     color: #0065FC;
     background-color: #DEEBFF;
-    border-radius: 47%;
+    border-radius: 50%;
 }
 
 /* Icône à la largeur différente des autres, modification du padding en conséquence pour ne pas avoir à la retrécir */
-#icone_déformée {
-    padding: 16px 14px;
-}
+#icone_déformée { padding: 13px 17px; }
 
 /* Résultat de recherche */
 
 #search_result {
-    margin: 35px 10px;
+    margin: 35px 5px;
     height: fit-content;
     display: flex;
     justify-content: flex-start;
