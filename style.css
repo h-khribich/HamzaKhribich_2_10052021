@@ -4,6 +4,7 @@
        Bleu: #0065FC
        Bleu clair: #DEEBFF */
 
+
 /* --- LAYOUT --- */
 
 * {
@@ -14,12 +15,24 @@
     color: rgb(45, 45, 45);
 }
 
-#main_wrapper { margin: 0 4%; }
+#main_wrapper { margin: 0 3.5%; }
 
 h1 { 
     font-size: 22px;
     padding: 10px 0px;
 }
+
+h2 {
+    font-size: 22px;
+    padding: 25px 0px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px;
+}
+
 
 /* --- HEADER --- */
 
@@ -69,6 +82,7 @@ nav a:hover {
     color: #0049b8;
 }
 
+
 /* --- SECTION RECHERCHE --- */
 
 /* Searchbar */
@@ -113,6 +127,7 @@ button {
 #searchbar button:hover {
     color: #0065FC;
     background-color: #DEEBFF;
+    cursor: pointer;
     transition: 0.3s ease-in;
 }
 
@@ -137,7 +152,7 @@ button {
     display: inline;
     font-size: 17px;
     font-weight: 700;
-    margin: 0px 5px;
+    margin: 0px 10px;
 }
 
 .filtre p {
@@ -165,7 +180,7 @@ button {
 /* Résultat de recherche */
 
 #search_result {
-    margin: 35px 5px;
+    margin: 35px 10px;
     height: fit-content;
     display: flex;
     justify-content: flex-start;
@@ -179,3 +194,117 @@ button {
     border: 1px solid #e2e2e2;
     border-radius: 50%;
 }
+
+/* Afficher les sections Hébergements et Populaires côte à côte*/
+
+#hebergement_populaires--container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+/* --- SECTION HÉBERGEMENTS --- */
+
+#section--hebergements {
+    padding: 20px 40px;
+    margin-right: 15px;
+    width: 66%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+/* Cartes */
+
+.carte--container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Border transparente pour empêcher le mouvement lors d'un hover */
+.carte {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 2px 2px 7px rgba(128, 128, 128, 0.301);
+}
+
+.carte img {
+    height: 125px;
+    width: 245px;
+    object-fit: cover;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Carte hover */
+
+.carte:hover {
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.363);
+    transition: 0.3s ease-in;
+}
+
+.carte:hover img {
+    padding: 0px 0px 5px 0px;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+
+.carte:hover h3 {
+    color: #0065FC;
+    transition: 0.3s ease-in;
+}
+
+/* Légende */
+
+.carte--legende_photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 67px;
+    padding: 0px 15px 10px;
+}
+
+.carte--legende_para { font-size: 0.9em; }
+
+/* Notes */
+
+.carte--notes { display: flex; }
+
+.fas { padding: 4px 1px 0px 0px; }
+
+.full { color: #0065FC; }
+
+.empty { color: #cccccc; }
+
+/* "Afficher plus" */
+
+#afficher_plus {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 40px 10px 20px;
+}
+
+
+/* --- SECTION POPULAIRES --- */
+
+#section--populaires {
+    padding: 20px 45px;
+    margin-left: 15px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+#section--populaires_titre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
