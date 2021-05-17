@@ -376,3 +376,35 @@ button {
     width: 160px;
     padding: 0px;
 }
+
+
+/* --- FOOTER --- */
+
+footer {
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    background-color: #F2F2F2;
+}
+
+.footer--box {
+    padding: 45px;
+    margin-right: 145px;
+}
+
+.footer--title {
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer--box li {
+    list-style-type: none;
+    line-height: 190%;
+}
+
+/* Alignement du second élèment de 'footer' */
+
+#footer--box_hebergements {
+    margin-right: 65px;
+}
