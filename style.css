@@ -23,6 +23,7 @@ h1 {
 }
 
 h2 {
+    display: inline-flex;
     font-size: 22px;
     padding: 25px 0px;
 }
@@ -143,6 +144,7 @@ button {
 #filtre--container {
     padding-top: 10px;
     width: 70%;
+    max-width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -199,7 +201,8 @@ button {
 
 #hebergement_populaires--container {
     width: 100%;
-    display: inline-flex;
+    height: fit-content;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -208,8 +211,9 @@ button {
 
 #section--hebergements {
     padding: 20px 40px;
-    margin-right: 15px;
-    width: 66%;
+    width: fit-content;
+    height: fit-content;
+    max-width: 66%;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
@@ -217,7 +221,9 @@ button {
 /* Cartes */
 
 .carte--container {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
+    align-content: flex-start;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -236,7 +242,7 @@ button {
     height: 125px;
     width: 245px;
     object-fit: cover;
-    padding: 5px;
+    padding: 4px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -258,7 +264,8 @@ button {
 
 .carte:hover h3 {
     color: #0065FC;
-    transition: 0.3s ease-in;
+    font-size: 1.1em;
+    transition: 0.2s ease-in;
 }
 
 /* Légende */
@@ -286,25 +293,86 @@ button {
 /* "Afficher plus" */
 
 #afficher_plus {
+    display: inline-block;
     font-size: 1.1em;
     font-weight: 700;
-    padding: 40px 10px 20px;
+    padding: 40px 10px 15px;
+}
+
+/* "Afficher plus" hover */
+#afficher_plus:hover {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #0065FC;
+    padding: 40px 10px 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
 }
 
 
 /* --- SECTION POPULAIRES --- */
 
 #section--populaires {
-    padding: 20px 45px;
-    margin-left: 15px;
+    padding: 20px 35px 30px;
     width: fit-content;
+    height: fit-content;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
 
 #section--populaires_titre {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Cartes */
+
+.carte--container_populaires { 
+    width: fit-content;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.carte_populaires { 
+    display: flex; 
+    max-width: 345px;
+}
+
+.carte_populaires img {
+    width: 140px;
+    height: 140px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+}
+
+.carte--legende_photo_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 10px 0px 15px;
+    height: 100%;
+}
+
+.carte--legende_photo_populaires h3 { padding-bottom: 5px; }
+
+.notes_populaires { padding-top: 35px; }
+
+/* Cartes hover */
+
+.carte_populaires:hover img{ padding-bottom: 0; }
+
+.carte_populaires:hover .notes_populaires{
+    position: absolute;
+    padding-top: 95px;
+}
+
+/* Image au comportement différent des autres cartes; modifications en conséquence*/
+
+.carte_populaires:hover #image_deformee {
+    width: 160px;
+    padding: 0px;
+}
