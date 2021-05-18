@@ -1,11 +1,11 @@
-/* --- CHARTE --- */
+            /* --- CHARTE --- */
 
     /* Fond gris: #F2F2F2
        Bleu: #0065FC
        Bleu clair: #DEEBFF */
 
 
-/* --- LAYOUT --- */
+            /* --- LAYOUT --- */
 
 * {
     margin: 0;
@@ -35,7 +35,7 @@ h3 {
 }
 
 
-/* --- HEADER --- */
+            /* --- HEADER --- */
 
 header {
     display: flex;
@@ -44,10 +44,10 @@ header {
     width: 100%;
 }
 
-#header--logo {
-    display: inline-flex;
-    padding-top: 15px;
-}
+    #header--logo {
+        display: inline-flex;
+        padding-top: 15px;
+    }
 
 /* Nav */
 
@@ -57,34 +57,37 @@ nav ul {
     align-items: center;
 }
 
-nav li { list-style-type: none; }
+    nav li { list-style-type: none; }
 
-nav a {
-    color: rgb(65, 65, 65);
-    border-top: 2px solid transparent;
-    padding: 50px 34px 40px;
-    text-decoration: none;
-    display: inline-block;
-}
+        nav a {
+            color: rgb(65, 65, 65);
+            border-top: 2px solid transparent;
+            padding: 50px 34px 40px;
+            text-decoration: none;
+            display: inline-block;
+        }
 
-nav a:hover {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    transition: 0.4s ease-in;
-}
+        #bouton_inscription a {
+            font-weight: bolder;
+            color: #0065FC;
+        }
 
-#bouton_inscription a {
-    font-weight: bolder;
-    color: #0065FC;
-}
+        /* Nav hover */
 
-#bouton_inscription a:hover {
-    font-weight: bolder;
-    color: #0049b8;
-}
+        nav a:hover {
+            color: #0065FC;
+            border-top: 2px solid #0065FC;
+            transition: 0.4s ease-in;
+        }
 
 
-/* --- SECTION RECHERCHE --- */
+        #bouton_inscription a:hover {
+            font-weight: bolder;
+            color: #0049b8;
+        }
+
+
+            /* --- SECTION RECHERCHE --- */
 
 /* Searchbar */
 
@@ -95,48 +98,50 @@ nav a:hover {
     align-items: center;
 }
 
-#searchbar 
-input,
-button {
-    height: 100%;
-    font-size: 1.1em;
-    font-weight: 600;
-    border: none;
-}
+    #searchbar 
+    input,
+    button {
+        height: 100%;
+        font-size: 1.1em;
+        font-weight: 600;
+        border: none;
+    }
 
-#searchbar input {
-    width: 235px;
-    font-weight: 700;
-    font-size: 1.1em;
-    padding: 10px 15px;
-    border: 1px solid #F2F2F2;
-}
+    #searchbar input {
+        width: 235px;
+        font-weight: 700;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        border: 1px solid #F2F2F2;
+    }
 
-::placeholder {
-    color: rgb(45, 45, 45);
-    opacity: 1;
-}
+    ::placeholder {
+        color: rgb(45, 45, 45);
+        opacity: 1;
+    }
 
-#searchbar button {
-    color: #fff;
-    background-color: #0065FC;
-    padding: 10px 18px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
+    #searchbar button {
+        color: #fff;
+        background-color: #0065FC;
+        padding: 10px 18px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    #searchbar i {
+        padding: 17px 20px;
+        background-color: #F2F2F2;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+/* Searchbar hover */
 
 #searchbar button:hover {
     color: #0065FC;
     background-color: #DEEBFF;
     cursor: pointer;
     transition: 0.3s ease-in;
-}
-
-#searchbar i {
-    padding: 17px 20px;
-    background-color: #F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
 }
 
 /* Filtres */
@@ -150,31 +155,31 @@ button {
     justify-content: space-between;
 }
 
-#filtre--titre {
-    display: inline;
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0px 10px;
-}
+    #filtre--titre {
+        display: inline;
+        font-size: 17px;
+        font-weight: 700;
+        margin: 0px 10px;
+    }
 
-.filtre p {
-    padding: 13px 20px 12px 0px;
-    font-size: 17px;
-    font-weight: 700;
-    border: 2px solid #e2e2e2;
-    border-radius: 25px;
-    border-left-style: none;
-    border-left-color: #fff;
-}
+    .filtre p {
+        padding: 13px 20px 12px 0px;
+        font-size: 17px;
+        font-weight: 700;
+        border: 2px solid #e2e2e2;
+        border-radius: 25px;
+        border-left-style: none;
+        border-left-color: #fff;
+    }
 
-.filtre i {
-    padding: 16px;
-    margin-right: 13px;
-    display: inline;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-}
+    .filtre i {
+        padding: 16px;
+        margin-right: 13px;
+        display: inline;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-radius: 50%;
+    }
 
 /* Icône à la largeur différente des autres, modification du padding en conséquence pour ne pas avoir à la retrécir */
 #icone_déformée { padding: 13px 17px; }
@@ -189,16 +194,15 @@ button {
     align-items: center;
 }
 
-#search_result i {
-    margin-right: 10px;
-    padding: 6px 10px;
-    color: #0065FC;
-    border: 1px solid #e2e2e2;
-    border-radius: 50%;
-}
+    #search_result i {
+        margin-right: 10px;
+        padding: 6px 10px;
+        color: #0065FC;
+        border: 1px solid #e2e2e2;
+        border-radius: 50%;
+    }
 
-/* Afficher les sections Hébergements et Populaires côte à côte*/
-
+/* Afficher les sections "Hébergements" et "Populaires" côte à côte*/
 #hebergement_populaires--container {
     width: 100%;
     height: fit-content;
@@ -207,7 +211,7 @@ button {
 }
 
 
-/* --- SECTION HÉBERGEMENTS --- */
+            /* --- SECTION "HÉBERGEMENTS" --- */
 
 #section--hebergements {
     padding: 20px 40px;
@@ -238,14 +242,14 @@ button {
     box-shadow: 2px 2px 7px rgba(128, 128, 128, 0.301);
 }
 
-.carte img {
-    height: 125px;
-    width: 245px;
-    object-fit: cover;
-    padding: 4px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
+    .carte img {
+        height: 125px;
+        width: 245px;
+        object-fit: cover;
+        padding: 4px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
 
 /* Carte hover */
 
@@ -256,17 +260,17 @@ button {
     transition: 0.3s ease-in;
 }
 
-.carte:hover img {
-    padding: 0px 0px 5px 0px;
-    opacity: 0.8;
-    transition: 0.2s ease-in-out;
-}
+    .carte:hover img {
+        padding: 0px 0px 5px 0px;
+        opacity: 0.8;
+        transition: 0.2s ease-in-out;
+    }
 
-.carte:hover h3 {
-    color: #0065FC;
-    font-size: 1.1em;
-    transition: 0.2s ease-in;
-}
+    .carte:hover h3 {
+        color: #0065FC;
+        font-size: 1.1em;
+        transition: 0.2s ease-in;
+    }
 
 /* Légende */
 
@@ -290,27 +294,31 @@ button {
 
 .empty { color: #cccccc; }
 
-/* "Afficher plus" */
+/* "Afficher plus" - Empêcher l'élèment de faire bouger son parent lors de hover*/
 
 #afficher_plus {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 76px;
     font-size: 1.1em;
     font-weight: 700;
-    padding: 40px 10px 15px;
+}
+
+#afficher_plus p {
+    padding-top: 25px;
 }
 
 /* "Afficher plus" hover */
-#afficher_plus:hover {
-    font-size: 1.2em;
-    font-weight: 700;
+#afficher_plus:hover p {
     color: #0065FC;
-    padding: 40px 10px 15px;
+    font-size: 1.1em;
     cursor: pointer;
     transition: 0.2s ease-in;
 }
 
 
-/* --- SECTION POPULAIRES --- */
+            /* --- SECTION "POPULAIRES" --- */
 
 #section--populaires {
     padding: 20px 35px 30px;
@@ -320,48 +328,48 @@ button {
     background-color: #F2F2F2;
 }
 
-#section--populaires_titre {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
+    #section--populaires_titre {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-/* Cartes */
+/* Cartes section "Populaire" */
 
 .carte--container_populaires { 
     width: fit-content;
-    height: 490px;
+    height: 491px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.carte_populaires { 
-    display: flex; 
-    max-width: 345px;
-}
+    .carte_populaires { 
+        display: flex; 
+        max-width: 345px;
+    }
 
-.carte_populaires img {
-    width: 140px;
-    height: 140px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0px;
-}
+        .carte_populaires img {
+            width: 140px;
+            height: 140px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 0px;
+        }
 
-.carte--legende_photo_populaires {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 15px 10px 0px 15px;
-    height: 100%;
-}
+        .carte--legende_photo_populaires {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 15px 10px 0px 15px;
+            height: 100%;
+        }
 
-.carte--legende_photo_populaires h3 { padding-bottom: 5px; }
+        .carte--legende_photo_populaires h3 { padding-bottom: 5px; }
 
-.notes_populaires { padding-top: 35px; }
+        .notes_populaires { padding-top: 35px; }
 
-/* Cartes hover */
+/* Cartes section "Populaires" hover */
 
 .carte_populaires:hover img{ padding-bottom: 0; }
 
@@ -377,8 +385,104 @@ button {
     padding: 0px;
 }
 
+            /* --- SECTION "ACTIVITÉS" --- */
 
-/* --- FOOTER --- */
+#section--activités {
+    margin: 55px 0px 60px;
+    width: 100%;
+}
+
+#titre--activités {
+    padding-top: 0px;
+    padding-bottom: 25px;
+}
+
+figure {
+    max-height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px rgba(128, 128, 128, 0.164);
+}
+
+figure img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+figcaption {
+    font-weight: 700;
+    padding: 15px 20px;
+}
+
+/* "Activités" grid area */
+#activités--container {
+    display: grid;
+    height: 450px;
+    grid: 195px 40px 40px 170px / repeat(4, 1fr);
+    column-gap: 40px;
+    overflow: hidden;
+}
+
+/* Spécification individuelles img height car la figcaption sors de son figure */
+    #activités--1 {
+        grid-area: 1 / 1 / 5 / 1;
+    }
+
+        #activités--1 img {
+            height: 87%;
+        }
+
+    #activités--2 {
+        grid-area: 1 / 2 / 3 / 2;
+    }
+
+        #activités--2 img {
+            height: 77%;
+        }
+
+    #activités--3 {
+        grid-area: 4 / 2 / 5 / 2;
+    }
+
+        #activités--3 img {
+            height: 65%;
+        }
+
+    #activités--4 {
+        grid-area: 1 / 3 / 5 / 3;
+    }
+
+        #activités--4 img {
+            height: 87%;
+        }
+
+    #activités--5 {
+        grid-area: 1 / 4 / 2 / 4;
+    }
+
+        #activités--5 img {
+            height: 70%;
+        }
+
+    #activités--6 {
+        grid-area: 3 / 4 / 5 / 4;
+    }
+
+        #activités--6 img {
+            height: 72%;
+        }
+
+/*  Carte "Activités" Hover  */
+.activités--carte:hover {
+
+}
+
+/*  FINIR HOVER AVEC TRANSFORM ET SCALE  */
+
+
+            /* --- FOOTER --- */
 
 footer {
     width: 100%;
