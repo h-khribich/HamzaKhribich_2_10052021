@@ -149,7 +149,7 @@ nav ul {
 #filtre--container {
     padding-top: 10px;
     width: 70%;
-    max-width: 70%;
+    max-width: 950px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -388,13 +388,12 @@ nav ul {
             /* --- SECTION "ACTIVITÉS" --- */
 
 #section--activités {
-    margin: 55px 0px 60px;
+    margin: 30px 0px 60px;
     width: 100%;
 }
 
 #titre--activités {
-    padding-top: 0px;
-    padding-bottom: 25px;
+    padding-top: 25px 0px;
 }
 
 figure {
@@ -439,7 +438,7 @@ figcaption {
     }
 
         #activités--2 img {
-            height: 77%;
+            height: 76%;
         }
 
     #activités--3 {
@@ -476,7 +475,21 @@ figcaption {
 
 /*  Carte "Activités" Hover  */
 .activités--carte:hover {
+    opacity: 0.9;
+    box-shadow: 2px 3px 7px rgba(128, 128, 128, 0.425);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
 
+.activités--carte:hover figcaption {
+    font-size: 1.1em;
+    color: #0065FC;
+    transition: 0.2s ease-in;
+}
+
+.activités--carte:hover img {
+    padding: 2px;
+    transition: 0.2s ease-in;
 }
 
 /*  FINIR HOVER AVEC TRANSFORM ET SCALE  */
