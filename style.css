@@ -547,6 +547,7 @@ footer {
 
         /* --- MEDIA QUERIES --- */
 
+
 @media screen and (min-width: 1661px) {
     #main_wrapper {
         margin: 0 6.5%;
@@ -583,10 +584,4 @@ footer {
         justify-content: space-between;
         margin-right: 50px;
     }
-}
-
-
-/* cartes activités break here */
-@media screen and (max-width: 1160px) {
-    
 }
