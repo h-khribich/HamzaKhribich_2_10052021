@@ -737,7 +737,7 @@ footer {
         min-width: 200px;
     }
 
-    #section--populaires_titre { justify-content: space-between; }
+    #section--populaires_titre { justify-content: space-around; }
 
     #section--populaires_titre h2 { padding-bottom: 15px; }
 
@@ -746,6 +746,7 @@ footer {
         margin: 0;
         align-items: center;
         justify-content: space-evenly;
+        gap: 20px;
     }
 
     /* Section "Activités" */
