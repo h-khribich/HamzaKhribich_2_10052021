@@ -809,4 +809,8 @@ footer {
     }
 }
 
+@media screen and (min-width: 900px) {
+    #main_wrapper { margin: 0 3.5%; }
+}
+
 
