@@ -201,8 +201,10 @@ nav ul {
         border-radius: 50%;
     }
 
-/* Icône à la largeur différente des autres, modification du padding en conséquence pour ne pas avoir à la retrécir */
-#icone_déformée { padding: 13px 17px; }
+/* Icônes à la largeur différente des autres, modification des paddings en conséquence pour ne pas avoir à les retrécir */
+#icone_deformee { padding: 16px 15px; }
+
+#icone_deformee--2 { padding: 13px 17px; }
 
 /* Résultat de recherche */
 
@@ -625,13 +627,9 @@ footer {
         max-width: 100%;
     }
 
-    #bouton_inscription {
-        display: none;
-    }
+    #bouton_inscription { display: none; }
 
-    #bouton_inscription--mobile {
-        visibility: visible;
-    }
+    #bouton_inscription--mobile { visibility: visible; }
 
     /* Nav */
     nav {
@@ -660,9 +658,7 @@ footer {
     #recherche--partie_titre { padding: 20px 17px; }
 
     /* Searchbar */
-    #search--desktop {
-        display: none;
-    }
+    #search--desktop { display: none; }
 
     #searchbar {
         margin: 15px 0px;
@@ -690,6 +686,25 @@ footer {
         background-color: #0065FC;
     }
 
+    /* Filtres */
+    #filtre--titre {
+        width: 100%;
+        padding: 5px 0px 15px 10px;
+    }
+
+    #filtre--container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .filtre { padding-bottom: 15px; }
+
+    .filtre p {
+        margin-left: 10px;
+        padding-right: 17px;
+    }
+
     /* Contenu principal */
 
     #hebergement_populaires--container {
@@ -704,21 +719,13 @@ footer {
         background-color: #fff;
     }
 
-    .carte--container {
-        gap: 15px;
-    }
+    .carte--container { gap: 15px; }
 
-    .carte--container .carte {
-        width: 320px;
-    }
+    .carte--container .carte { width: 320px; }
 
-    .carte--container .carte img {
-        width: 100%;
-    }
+    .carte--container .carte img { width: 100%; }
 
-    .carte--legende_photo {
-        height: 70px;
-    }
+    .carte--legende_photo { height: 70px; }
 
     /* Section "populaires" */
     #section--populaires {
@@ -729,13 +736,9 @@ footer {
         min-width: 200px;
     }
 
-    #section--populaires_titre {
-        justify-content: space-between;
-    }
+    #section--populaires_titre { justify-content: space-between; }
 
-    #section--populaires_titre h2 {
-        padding-bottom: 15px;
-    }
+    #section--populaires_titre h2 { padding-bottom: 15px; }
 
     .carte--container_populaires {
         margin: 0;
