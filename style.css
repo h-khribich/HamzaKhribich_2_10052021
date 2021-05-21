@@ -102,6 +102,7 @@ nav ul {
         #bouton_inscription a:hover {
             font-weight: bolder;
             color: #0049b8;
+            border-top: 1px solid transparent;
         }
 
 
@@ -200,6 +201,24 @@ nav ul {
         background-color: #DEEBFF;
         border-radius: 50%;
     }
+
+    /* Filtres hover*/
+
+    .filtre:hover p{
+        color: #0065FC;
+        background-color: #DEEBFF;
+        border-color: #fff;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+
+    .filtre:hover i{
+        background-color: #fff;
+        color: #025adf;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+
 
 /* Icônes à la largeur différente des autres, modification des paddings en conséquence pour ne pas avoir à les retrécir */
 #icone_deformee { padding: 16px 15px; }
@@ -519,7 +538,6 @@ figcaption {
 }
 
 .activités--carte:hover figcaption {
-    font-size: 1.1em;
     color: #0065FC;
     transition: 0.2s ease-in;
 }
@@ -631,6 +649,11 @@ footer {
     #bouton_inscription { display: none; }
 
     #bouton_inscription--mobile { visibility: visible; }
+
+    #bouton_inscription--mobile:hover {
+        font-weight: bolder;
+        color: #0049b8;
+    }
 
     /* Nav */
     nav {
