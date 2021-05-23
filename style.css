@@ -448,7 +448,7 @@ nav ul {
 }
 
 #titre--activités {
-    padding-top: 25px 0px;
+    padding-top: 25px;
 }
 
 figure {
@@ -780,19 +780,16 @@ footer {
 
     #activités--container {
         display: flex;
-        height: fit-content;
+        height: fit-content; height: -moz-fit-content;
         padding: 5px 0px;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: column; flex-wrap: wrap;
         align-items: center;
         row-gap: 25px;
     }
 
     .activités--carte {
-        width: 325px;
-        max-width: 325px;
-        height: 185px;
-        max-height: 185px;
+        width: 325px; max-width: 325px;
+        height: 185px; max-height: 185px;
     }
 
     /* Spécificité plus importante dans la partie desktop, ajout de "!important" en conséquence  */
@@ -815,15 +812,11 @@ footer {
     }
 }
 
-
-@media screen and (min-width: 600px) {
-    #main_wrapper { margin: 0 10%; }
-}
-
 @media screen and (min-width: 850px) {
     #activités--container {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     footer { flex-direction: row; }
