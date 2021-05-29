@@ -207,6 +207,7 @@ nav ul {
     .filtre:hover p{
         color: #0065FC;
         background-color: #DEEBFF;
+        transform: scale(1.05);
         border-color: #fff;
         transition: 0.2s ease-in;
         cursor: pointer;
