@@ -15,20 +15,6 @@
     color: rgb(45, 45, 45);
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    max-width: 2000px;
-    margin: auto;
-}
-
-#main_wrapper { margin: 0 3.5%; }
-
 h1 { 
     font-size: 22px;
     padding: 10px 0px;
@@ -48,6 +34,15 @@ h3 {
 
 a { text-decoration: none; }
 
+main,
+header { margin: 0 3.5%; }
+
+#main_wrapper { 
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+ }
+
 
             /* --- HEADER --- */
 
@@ -55,7 +50,6 @@ header {
     display: flex;
     justify-content: space-between;
     height: fit-content;
-    width: 100%;
 }
 
     #header--logo {
@@ -587,7 +581,8 @@ footer {
 
 
 @media screen and (min-width: 1661px) {
-    #main_wrapper {
+    main,
+    header {
         margin: 0 6.5%;
     }
 
@@ -599,7 +594,6 @@ footer {
 
     footer {
         padding: 0 50px;
-        margin: auto;
         justify-content: space-evenly;
     }
 }
@@ -626,7 +620,8 @@ footer {
 
 @media screen and (max-width: 900px) {
 
-    #main_wrapper {
+    main,
+    header {
         margin: 0;
         min-width: 360px;
     }
@@ -829,7 +824,8 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
-    #main_wrapper { margin: 0 3.5%; }
+    main,
+    header { margin: 0 3.5%; }
 }
 
 
