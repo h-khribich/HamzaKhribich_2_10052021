@@ -107,25 +107,30 @@ nav ul {
 #searchbar {
     margin: 20px 0px;
     height: 50px;
+    width: fit-content;
     display: flex;
     align-items: center;
+    border-radius: 15px;
 }
 
     #searchbar 
     input,
     button {
         height: 100%;
+        width: fit-content;
         font-size: 1.1em;
         font-weight: 600;
         border: none;
+        background: #fff;
     }
 
     #searchbar input {
         width: 240px;
         font-weight: 700;
         font-size: 1.1em;
-        padding: 10px 15px;
-        border: 1px solid #F2F2F2;
+        padding: 10px;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
     }
 
     ::placeholder {
@@ -136,12 +141,14 @@ nav ul {
     #searchbar #search--desktop {
         color: #fff;
         background-color: #0065FC;
-        padding: 10px 18px;
+        padding: 15px 20px 14px;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
     }
 
-    #search--mobile { visibility: hidden; }
+    #search--mobile { 
+        visibility: hidden;
+    }
 
     #searchbar i {
         padding: 17px 20px;
@@ -683,29 +690,35 @@ footer {
     #search--desktop { display: none; }
 
     #searchbar {
-        margin: 15px 0px;
+        margin: 0 auto;
+        padding: 15px 0px;
+        height: fit-content;
         justify-content: center;
+        align-items: center;
     }
 
     #searchbar input {
         border-right: none;
         margin-right: -13px;
+        padding: 13.5px 10px;
+    }
+
+    #searchbar button {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        border-radius: 15px;
     }
 
     #search--mobile {
-        padding: 0px;
-        display: inline-flex;
-        justify-content: flex-start;
-        align-items: center;
+        border: none;
+        visibility: visible;
     }
 
     #search--mobile i {
-        padding: 17px 17px 16px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        visibility: visible;
+        padding: 17px 17px 14px;
         color: #fff;
         background-color: #0065FC;
+        border-radius: 15px;
     }
 
     /* Filtres */
